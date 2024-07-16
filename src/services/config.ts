@@ -1,5 +1,4 @@
 import axios from "axios";
-import { resetAllStores } from "../store/store.config";
 
 const host = import.meta.env.VITE_HOST;
 const api = axios.create({
@@ -29,7 +28,6 @@ api.interceptors.response.use((response)=>{
     const response = error.response;
     if(response?.data?.type == "TOKEN INVALID"){
         localStorage.removeItem("token");
-        resetAllStores();
         localStorage.setItem("error","Session expired, please login again");
         window.location.href="/login";   
     }   
