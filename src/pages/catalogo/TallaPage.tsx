@@ -113,7 +113,7 @@ const TallaPage = () => {
   return (
     <div>
       <div className="flex justify-center mb-4">
-        <button onClick={()=>setOpenCreateModal(true)} className="px-4 py-2 rounded-md bg-slate-300">Agregar Color</button>
+        <button onClick={()=>setOpenCreateModal(true)} className="px-4 py-2 rounded-md bg-slate-300">Agregar Talla</button>
         {openCreateModal && <ModalProduct refreshData={refreshData}  close={()=>setOpenCreateModal(false)} />}
       
 

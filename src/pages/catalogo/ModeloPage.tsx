@@ -113,7 +113,7 @@ const ModeloPage = () => {
   return (
     <div>
       <div className="flex justify-center mb-4">
-        <button onClick={()=>setOpenCreateModal(true)} className="px-4 py-2 rounded-md bg-slate-300">Agregar Color</button>
+        <button onClick={()=>setOpenCreateModal(true)} className="px-4 py-2 rounded-md bg-slate-300">Agregar Modelo</button>
         {openCreateModal && <ModalProduct refreshData={refreshData}  close={()=>setOpenCreateModal(false)} />}
       
 
