@@ -1,0 +1,1 @@
+export type Response<T> =| {error:true,message:string,type:string} | {error:false, data:T}
